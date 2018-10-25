@@ -37,7 +37,6 @@ namespace Nihon
                     Instantiate(Blocks[i], randomSpawnerLocation.transform);
                     i++;
                 }
-                Debug.Log("DEBUG: LOOP COUNTER = " + i); // Can delete this later, checking for performance loop
             }
         }
     }
