@@ -10,15 +10,22 @@ namespace Nihon
 
         public Color hoverOverColor;
         public Color defaultColor;
+        private Color blockSelectedColor = new Color32(0x3D, 0xA8, 0x82, 0xff); //Color of block selected in Master_BlockRotation (should make this pass-through color variable : To fix later
 
         private void OnMouseEnter()
         {
-            GetComponent<Renderer>().material.SetColor("_Color", hoverOverColor);
+            if (GetComponent<Renderer>().material.color != blockSelectedColor)
+            {
+                GetComponent<Renderer>().material.SetColor("_Color", hoverOverColor);
+            }
         }
 
         private void OnMouseExit()
         {
-            GetComponent<Renderer>().material.SetColor("_Color", defaultColor);
+            if (GetComponent<Renderer>().material.color != blockSelectedColor)
+            {
+                GetComponent<Renderer>().material.SetColor("_Color", defaultColor);
+            } 
         }
     }
 }

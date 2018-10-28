@@ -63,7 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\_Prefabs\Old Nightstand\Demo\demoBehaviour.cs" />
     <Compile Include="Assets\_Scripts\CameraRotation.cs" />
-    <Compile Include="Assets\_Scripts\Master_BlockRotation.cs" />
+    <Compile Include="Assets\_Scripts\Master_BlockManager.cs" />
     <Compile Include="Assets\_Scripts\Master_MainMenu.cs" />
     <Compile Include="Assets\_Scripts\Master_SpawnController.cs" />
     <Compile Include="Assets\_Scripts\MouseHover_ChangeColor.cs" />
